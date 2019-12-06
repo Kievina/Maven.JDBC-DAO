@@ -77,5 +77,7 @@ public class CarDAOTest {
         CarDTO expectedCar = new CarDTO(expectedMake, expectedModel, expectedYear, expectedColor, expectedVin);
 
         carDAO.delete(expectedCar.getId());
+
+        Assert.assertFalse(carDAO.findAll().contains(expectedCar));
     }
 }
