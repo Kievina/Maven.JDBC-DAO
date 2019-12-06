@@ -67,7 +67,7 @@ public class CarDAOTest {
     }
 
     @Test
-    public void delete() {
+    public void deleteTest() {
         String expectedMake = "Ford";
         String expectedModel = "Focus";
         int expectedYear = 2012;
